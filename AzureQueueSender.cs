@@ -23,8 +23,7 @@ namespace AzureServiceBusMessageGenerator
   
           await client.SendAsync(message);  
       }  
-  
-      private AzureQueueSettings settings;  
+      
       private QueueClient client;  
   
       public AzureQueueSender(string queueName, string queueConnectionString)  
